@@ -1,0 +1,25 @@
+<html>
+	<head>
+
+		<title>Ajax live search using AngularJS | Prateek Shukla</title>
+		<link href="C:\Users\Prateek\Desktop\Hub\Angular SearchBox\site.css" rel="stylesheet" type="text/css" />
+		<script src = "C:\Users\Prateek\Desktop\Hub\Angular SearchBox\angular.min.js"></script>
+		<script src = "C:\Users\Prateek\Desktop\Hub\Angular SearchBox\site.js"></script>
+	</head>	
+
+	<body ng-app = "instantsearch">
+		  <body ng-app="instantsearch">
+        <div ng-controller="instantSearchCtrl">
+            <h3 class="headName">Ajax Live search using AngularJs</h3>
+            <div class="bar">
+                <input type="text" class="search" ng-model="searchString" placeholder="Enter your search terms" />
+            </div>
+            <ul class="data-ctrl">
+                <li ng-repeat="i in items | searchFor:searchString">
+                    <p>{{i.title}}
+                </li>
+            </ul>
+        </div>
+    </body>
+    <script src="js/site.js"></script>
+</html>
